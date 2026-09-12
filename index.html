@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhiyansh | B.Tech Student Portfolio</title>
+  <meta name="description" content="Personal portfolio of Abhiyansh - B.Tech First Year student at JECRC University, passionate about programming (Java, Python), sports (Badminton, Chess), and technology.">
+  
+  <!-- Google Fonts: Outfit & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 3D Interactive WebGL Canvas Container -->
+  <div id="canvas3d-container"></div>
+
+  <!-- Main Website Content Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="logo-wrapper">
+          <img src="assets/logo.svg" alt="Abhiyansh Monogram Logo" class="site-logo">
+          <div class="logo-text">ABHIYANSH<span>.</span></div>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-cta">Connect</a></li>
+        </ul>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="hero-content reveal">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>B.Tech 1st Year • JECRC University</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Abhiyansh</span> 👋
+          </h1>
+
+          <div class="hero-subtitle-container">
+            <span id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-bio">
+            A 17-year-old engineering freshman on a journey through computer science, software logic, and competitive mindset. Passionate about exploring new horizons—both across code and across the globe.
+          </p>
+
+          <div class="hero-meta-badges">
+            <span class="meta-badge"><i class="fas fa-code"></i> Java & Python</span>
+            <span class="meta-badge"><i class="fas fa-university"></i> JECRC University</span>
+            <span class="meta-badge"><i class="fas fa-chess-knight"></i> Chess Enthusiast</span>
+            <span class="meta-badge"><i class="fas fa-feather"></i> Badminton Player</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#about" class="btn-primary">
+              <span>Explore My Profile</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn-outline">
+              <span>Get In Touch</span>
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="glass-card hologram-card tilt-card">
+            <div class="avatar-frame">
+              <div class="avatar-glow-ring"></div>
+              <div class="avatar-core">
+                <span class="avatar-initials">A</span>
+              </div>
+            </div>
+            <h3 class="holo-name">Abhiyansh</h3>
+            <p class="holo-role">Engineering Undergraduate</p>
+
+            <div class="holo-stats-grid">
+              <div class="holo-stat-item">
+                <span class="holo-stat-label">Current Age</span>
+                <p class="holo-stat-val">17 Years</p>
+              </div>
+              <div class="holo-stat-item">
+                <span class="holo-stat-label">Academic Year</span>
+                <p class="holo-stat-val">1st Year B.Tech</p>
+              </div>
+              <div class="holo-stat-item">
+                <span class="holo-stat-label">Campus</span>
+                <p class="holo-stat-val">JECRC Univ.</p>
+              </div>
+              <div class="holo-stat-item">
+                <span class="holo-stat-label">Focus</span>
+                <p class="holo-stat-val">Software & Tech</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 1: About Me -->
+      <section id="about" class="about-section">
+        <div class="center-header reveal">
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Get to know the student behind the code and screen</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card about-narrative reveal tilt-card">
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">The Freshman Mindset 🚀</h3>
+            <p>
+              My name is <strong>Abhiyansh (Abhiyanshn)</strong>. At 17 years old, I am starting my journey as a <strong>B.Tech First Year</strong> student at <strong>JECRC University</strong>. 
+            </p>
+            <p>
+              Ever since completing my senior secondary schooling, I've had an immense curiosity for how digital systems operate. Rather than just consuming technology, I am committed to learning how to engineer it. 
+            </p>
+            <p>
+              Outside academic hours, you will find me either strategizing over a chessboard, sharpening my reflexes on the badminton court, or researching new destinations and technologies to explore.
+            </p>
+          </div>
+
+          <div class="info-cards-grid reveal">
+            <div class="glass-card info-card tilt-card">
+              <div class="info-card-icon"><i class="fas fa-id-badge"></i></div>
+              <div class="info-card-content">
+                <h4>Full Name</h4>
+                <p>Abhiyansh (Abhiyanshn)</p>
+              </div>
+            </div>
+
+            <div class="glass-card info-card tilt-card">
+              <div class="info-card-icon"><i class="fas fa-hourglass-half"></i></div>
+              <div class="info-card-content">
+                <h4>Age</h4>
+                <p>17 Years Old</p>
+              </div>
+            </div>
+
+            <div class="glass-card info-card tilt-card">
+              <div class="info-card-icon"><i class="fas fa-calendar-alt"></i></div>
+              <div class="info-card-content">
+                <h4>Date of Birth</h4>
+                <p>19 / 09 / 2009</p>
+              </div>
+            </div>
+
+            <div class="glass-card info-card tilt-card">
+              <div class="info-card-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="info-card-content">
+                <h4>University</h4>
+                <p>JECRC University</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Education -->
+      <section id="education" class="education-section">
+        <div class="center-header reveal">
+          <h2 class="section-title">Academic <span class="gradient-text">Journey</span></h2>
+          <p class="section-subtitle">My milestones in education leading up to B.Tech</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: B.Tech 1st Year -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card tilt-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Bachelor of Technology (B.Tech) - 1st Year</h3>
+                <span class="timeline-badge current">Currently Pursuing</span>
+              </div>
+              <div class="timeline-institute">
+                <i class="fas fa-university"></i> JECRC University, Jaipur
+              </div>
+              <p class="timeline-desc">
+                Currently immersing in foundational computer science, core engineering mathematics, data structures concepts, algorithms, and practical programming labs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: Class 12 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card tilt-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Senior Secondary Education (Class XII)</h3>
+                <span class="timeline-badge">Qualified</span>
+              </div>
+              <div class="timeline-institute">
+                <i class="fas fa-school"></i> High School Board
+              </div>
+              <p class="timeline-desc">
+                Completed higher secondary curriculum with a strong analytical focus on Science and Mathematics, laying the groundwork for technical engineering studies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Class 10 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card tilt-card">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Secondary Education (Class X)</h3>
+                <span class="timeline-badge">Qualified</span>
+              </div>
+              <div class="timeline-institute">
+                <i class="fas fa-book-reader"></i> Secondary Board
+              </div>
+              <p class="timeline-desc">
+                Successfully qualified 10th standard with comprehensive academic coursework, active participation in school sports tournaments, and extracurricular clubs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Skills -->
+      <section id="skills" class="skills-section">
+        <div class="center-header reveal">
+          <h2 class="section-title">Skills & <span class="gradient-text">Passions</span></h2>
+          <p class="section-subtitle">A balanced fusion of technical foundations and life interests</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Technical Skills -->
+          <div class="glass-card reveal tilt-card">
+            <h3 class="skill-category-title">
+              <i class="fas fa-laptop-code"></i> Technical Foundations
+            </h3>
+            <div class="skill-items-list">
+              <div class="skill-unit">
+                <div class="skill-meta">
+                  <span>Python Programming</span>
+                  <span style="color: var(--primary-cyan);">Active Learning</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-unit">
+                <div class="skill-meta">
+                  <span>Java (OOP Concepts & Syntax)</span>
+                  <span style="color: var(--primary-cyan);">Active Learning</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 70%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-unit">
+                <div class="skill-meta">
+                  <span>Logic Building & Problem Solving</span>
+                  <span style="color: var(--primary-cyan);">Analytical</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 80%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-unit">
+                <div class="skill-meta">
+                  <span>Web Technologies (HTML5 / CSS3 / JS)</span>
+                  <span style="color: var(--primary-cyan);">Foundational</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="width: 65%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Passions & Life Skills -->
+          <div class="glass-card reveal tilt-card">
+            <h3 class="skill-category-title">
+              <i class="fas fa-compass"></i> Passions & Life Explorations
+            </h3>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">
+              Skills aren't just confined to the keyboard. I believe in continuous curiosity, staying active, and discovering new viewpoints through travel and exploration.
+            </p>
+            <div class="skill-tags-cloud">
+              <span class="skill-tag"><i class="fas fa-plane-departure" style="color: #00f2fe;"></i> Travelling & Exploring Places</span>
+              <span class="skill-tag"><i class="fas fa-binoculars" style="color: #4facfe;"></i> Exploring New Technologies</span>
+              <span class="skill-tag"><i class="fas fa-lightbulb" style="color: #ffd700;"></i> Rapid Learner Mindset</span>
+              <span class="skill-tag"><i class="fas fa-brain" style="color: #8a2be2;"></i> Strategic Thinking</span>
+              <span class="skill-tag"><i class="fas fa-users" style="color: #00f5a0;"></i> Team Collaboration</span>
+              <span class="skill-tag"><i class="fas fa-bolt" style="color: #ff7675;"></i> Adaptability</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Achievements -->
+      <section id="achievements" class="achievements-section">
+        <div class="center-header reveal">
+          <h2 class="section-title">Key <span class="gradient-text">Achievements</span></h2>
+          <p class="section-subtitle">Milestones across computer programming, sports, and strategy</p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Achievement 1: Coding -->
+          <div class="glass-card achievement-card tilt-card reveal">
+            <div class="achievement-icon-box">
+              <i class="fas fa-code"></i>
+            </div>
+            <span class="achievement-tag">Technical Milestone</span>
+            <h3 class="achievement-title">Learned Java & Python</h3>
+            <p class="achievement-desc">
+              Grasped the core concepts of object-oriented programming, data structures, algorithms, and practical scripting in both Python and Java early in the first year of college.
+            </p>
+          </div>
+
+          <!-- Achievement 2: Badminton -->
+          <div class="glass-card achievement-card tilt-card reveal">
+            <div class="achievement-icon-box">
+              <i class="fas fa-feather-alt"></i>
+            </div>
+            <span class="achievement-tag">Sports & Athletics</span>
+            <h3 class="achievement-title">School Level Badminton Player</h3>
+            <p class="achievement-desc">
+              Competed in inter-school badminton tournaments. Built agility, lightning-fast reflexes, dedication, and sportsmanship through rigorous on-court training.
+            </p>
+          </div>
+
+          <!-- Achievement 3: Chess -->
+          <div class="glass-card achievement-card tilt-card reveal">
+            <div class="achievement-icon-box">
+              <i class="fas fa-chess-queen"></i>
+            </div>
+            <span class="achievement-tag">Strategic Mind</span>
+            <h3 class="achievement-title">School Level Chess Player</h3>
+            <p class="achievement-desc">
+              Represented school in chess competitions. Cultivated deep foresight, patience, tactical analysis, and the ability to think multiple moves ahead under time pressure.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Contact -->
+      <section id="contact" class="contact-section">
+        <div class="center-header reveal">
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Interested in collaborating, discussing projects, or connecting?</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="glass-card reveal tilt-card">
+            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Let's Connect! 📬</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Feel free to reach out for academic projects, coding challenges, badminton matches, or tech discussions!
+            </p>
+
+            <div class="contact-info-list">
+              <a href="mailto:contact.abhiyansh@example.com" class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <span style="font-size: 0.8rem; color: var(--text-dim); display: block;">Email</span>
+                  <strong>abhiyansh@jecrc.edu.in</strong>
+                </div>
+              </a>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <span style="font-size: 0.8rem; color: var(--text-dim); display: block;">Campus</span>
+                  <strong>JECRC University, Jaipur, Rajasthan</strong>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-user-graduate"></i></div>
+                <div>
+                  <span style="font-size: 0.8rem; color: var(--text-dim); display: block;">Status</span>
+                  <strong>1st Year B.Tech Undergraduate</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="glass-card reveal tilt-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" class="form-input" placeholder="e.g. Prof. Sharma / Peer" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" class="form-input" placeholder="e.g. name@jecrc.edu.in" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" class="form-textarea" placeholder="Write your message or project note here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="#hero" class="logo-wrapper">
+          <img src="assets/logo.svg" alt="Abhiyansh Logo" style="width: 28px; height: 28px;">
+          <span style="font-weight: 700; color: var(--text-main);">ABHIYANSH</span>
+        </a>
+        <div class="footer-links">
+          <a href="#about" class="footer-link">About</a>
+          <a href="#education" class="footer-link">Education</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#achievements" class="footer-link">Achievements</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+        <p class="footer-copy">
+          Designed & Built with 3D WebGL for B.Tech First Year Project • © <span id="current-year"></span> Abhiyansh (JECRC University)
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Three.js Library from CDN for 3D Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- 3D Scene Initialization -->
+  <script src="js/background3d.js"></script>
+  <!-- Main Interactions -->
+  <script src="js/main.js"></script>
+</body>
+</html>
